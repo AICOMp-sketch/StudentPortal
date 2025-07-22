@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademiXpert | Student Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container pulse">
+        <div class="login-header">
+            <div class="logo-container">
+                <img src="https://placehold.co/100x100/4361ee/FFFFFF?text=AX" alt="AcademiXpert logo with abstract graduation cap design in white on blue background">
+            </div>
+            <h1>Student Portal</h1>
+            <p>Access your academic journey</p>
+        </div>
+        
+        <div class="login-form">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="studentId">Student ID / Email</label>
+                    <input type="text" id="studentId" class="form-control" placeholder="Enter your student ID or email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                    <span class="password-toggle" id="togglePassword">
+                        <i class="far fa-eye"></i>
+                    </span>
+                </div>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Sign In</button>
+                
+                <div class="divider">or</div>
+                
+                <div class="social-login">
+                    <div class="social-btn">
+                        <i class="fab fa-google" style="color: #DB4437;"></i>
+                    </div>
+                    <div class="social-btn">
+                        <i class="fab fa-microsoft" style="color: #0078D7;"></i>
+                    </div>
+                    <div class="social-btn">
+                        <i class="fab fa-apple" style="color: #000000;"></i>
+                    </div>
+                </div>
+                
+                <div class="links">
+                    <a href="#" id="forgotPassword">Forgot password?</a>
+                    <span> | </span>
+                    <a href="#" id="registerNow">Register new account</a>
+                </div>
+            </form>
+            
+            <div class="footer">
+                <p>© 2023 AcademiXpert. All rights reserved.</p>
+                <p>Version 4.2.1</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
